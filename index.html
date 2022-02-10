@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="content">
+        <header id="home">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="check-btn hamburger">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <h1>Jane Doe,<br> Front-end Developer</h1>
+        </header>
+
+        <section id="about">
+            <img src="images/person.jpg">
+            <div class="about-details">
+                <h2 id="about-heading">About me</h2>
+                <p>Hi, I'm Jane Doe. I've been a junior front-end developer for 5 months now.</p>
+                <p>Foe me, programming is not a job. It's a hobby.
+                I'm open to new knowledge. I like to study new technologies and apply them in practice.
+                Skills: HTML, CSS JS.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-details">
+                <div class="work">
+                    <img src="site/project1.png" title="Flash Cards">
+                    <p>Flash Cards</p>
+                    <button class="open-window" onclick="toggle()">Check</button>
+                </div>
+                <div class="work">
+                    <img src="site/project2.png">
+                    <p>Virtual Piano</p>
+                    <button class="open-window" onclick="toggle2()">Check</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>You can contact me at <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+            <p id="phone">or phone number - <a href="tel:123456">123456</a> </p>
+            <div class="links">
+                <a href="https://facebook.com"> <img src="site/facebook.svg"></a>
+                <a href="https://github.com"><img src="site/github.svg"></a>
+                <a href="https://instagram"><img src="site/instagram%201.svg"></a>
+                <a href="https://twitter.com"><img src="site/twitter.svg"></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>Jane Doe</p>
+            <p id="footer-p">2022</p>
+        </footer>
+    </div>
+
+    <div class="window" id="project1">
+        <h1>Flashcards</h1>
+        <p>You can see the project at the following link: <a href="https://github.com">flashcards</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill.
+            I created a web page with flip-down flash cards, learned some HTML basics and
+            learned that CSS can easily make a beautiful design.</p>
+        <button onclick="toggle()">Close</button>
+    </div>
+    <div class="window" id="project2">
+        <h1>Virtual Piano</h1>
+        <p>You can see the project at the following link: <a href="https://github.com">virtual piano</a></p>
+        <p>I did this project when I was studying the frontend on HyperSkill.
+            I created a web page, learned some HTML basics and
+            learned that CSS can easily make a beautiful design.</p>
+        <button onclick="toggle2()">Close</button>
+    </div>
+    <script src="main.js"> </script>
+</body>
+</html>
