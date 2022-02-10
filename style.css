@@ -207,6 +207,7 @@ button{
     padding:5px  10px;
     background-color: #1E1010;
     color: white;
+    cursor: pointer;
 }
 
 #content.active{
